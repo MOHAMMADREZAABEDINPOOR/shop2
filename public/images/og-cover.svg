@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18181b"/>
+      <stop offset="0.55" stop-color="#27272a"/>
+      <stop offset="1" stop-color="#4c0519"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f43f5e"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="80" r="180" fill="#f43f5e" opacity="0.12"/>
+  <circle cx="120" cy="560" r="140" fill="#f43f5e" opacity="0.10"/>
+  <rect x="80" y="150" width="120" height="120" rx="28" fill="url(#accent)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M114 188v-6a14 14 0 0 1 28 0v6"/>
+    <path d="M106 188h48l-3.5 40a7 7 0 0 1-7 6.4h-34a7 7 0 0 1-7-6.4L106 188z"/>
+  </g>
+  <text x="1040" y="225" text-anchor="end" font-family="Vazirmatn, Tahoma, sans-serif" font-size="92" font-weight="900" fill="#ffffff">دیجی‌استور</text>
+  <text x="1040" y="300" text-anchor="end" font-family="Vazirmatn, Tahoma, sans-serif" font-size="40" fill="#e4e4e7">فروشگاه اینترنتی کالای دیجیتال</text>
+  <rect x="640" y="360" width="400" height="4" rx="2" fill="url(#accent)"/>
+  <text x="1040" y="430" text-anchor="end" font-family="Vazirmatn, Tahoma, sans-serif" font-size="32" fill="#fda4af">ضمانت اصالت کالا • ارسال سریع • ۷ روز مهلت بازگشت</text>
+  <text x="1040" y="500" text-anchor="end" font-family="Tahoma, sans-serif" font-size="28" fill="#71717a">digistore.ir</text>
+</svg>
