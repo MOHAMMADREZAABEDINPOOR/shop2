@@ -1,27 +1,41 @@
 <div align="center">
 
-<img src="public/readme-assets/hero.gif" width="1200" alt="COMMERCE · LARAVEL — rotating 3D geometry" />
+<img src="public/readme-assets/hero.gif" width="1200" alt="COMMERCE · LARAVEL: a boutique storefront with product display and a shopping bag" />
 
 **[English](README.md) · [فارسی](README.fa.md)**
 
-<img src="public/readme-assets/identity.svg" width="1200" alt="commerce / English and Persian documentation" />
-
 </div>
 
-# COMMERCE · LARAVEL
+# 🛍️ COMMERCE · LARAVEL
 
 A Laravel 13 ecommerce application with an Alpine.js/Tailwind frontend, product variants, customer accounts, carts, orders and role-based administrative workflows.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/shop2) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](public/readme-assets/hero.png)
 
-## Features
+| At a glance | Details |
+|:---|:---|
+| 🛍️ Experience | Web application / browser experience |
+| 🧰 Built with | `Vite` · `Tailwind CSS` · `php` · `laravel/framework` |
+| 🌐 Documentation | [English](README.md) · [فارسی](README.fa.md) |
 
-- Catalog, product variants, wishlists and reviews
-- Cart, coupons, addresses and checkout
-- Admin/staff roles with granular permissions
-- Persian/English translations and responsive templates
+[✨ Features](#features) · [🚀 Getting started](#getting-started) · [⚙️ Configuration](#configuration) · [🌍 Deployment](#deployment)
 
-## Stack
+---
+
+<a id="features"></a>
+
+## ✨ Features
+
+| Area | Included capability |
+|:---|:---|
+| 🛍️ Commerce | Catalog, product variants, wishlists and reviews |
+| 🛍️ Commerce | Cart, coupons, addresses and checkout |
+| 👤 Accounts | Admin/staff roles with granular permissions |
+| 🌐 Experience | Persian/English translations and responsive templates |
+
+<a id="stack"></a>
+
+## 🧰 Stack
 
 | Tool | Version / source |
 |---|---|
@@ -30,7 +44,9 @@ A Laravel 13 ecommerce application with an Alpine.js/Tailwind frontend, product 
 | php | `^8.3` |
 | laravel/framework | `^13.17` |
 
-## Getting started
+<a id="getting-started"></a>
+
+## 🚀 Getting started
 
 PHP 8.3+, Composer, Node.js 22.12+, npm and the database configured in .env.
 
@@ -48,7 +64,9 @@ npm run build
 php artisan serve
 ```
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
 
@@ -109,11 +127,15 @@ These names are found in the example configuration or source; not all are requir
 | `SESSION_PATH` | Application setting; inspect its definition |
 | `VITE_APP_NAME` | Public browser configuration; never put secrets here |
 
-## Usage
+<a id="usage"></a>
+
+## 🎯 Usage
 
 Use PHP 8.3+, Composer and Node compatible with Vite 8. Configure .env and a database, generate APP_KEY, migrate and seed a development database, build assets and start Artisan. Inspect routes/web.php for customer/admin paths.
 
-## Project structure
+<a id="project-structure"></a>
+
+## 🗂️ Project structure
 
 | Path | Role |
 |---|---|
@@ -127,7 +149,14 @@ Use PHP 8.3+, Composer and Node compatible with Vite 8. Configure .env and a dat
 | [`composer.json`](composer.json) | Project entry/configuration file |
 | [`package.json`](package.json) | Project entry/configuration file |
 
-## Commands and checks
+<a id="commands-and-checks"></a>
+
+## 🧪 Commands and checks
+
+| Command | Purpose |
+|:---|:---|
+| `npm run build` | 📦 Production build |
+| `npm run dev` | 🧑‍💻 Development server |
 
 ```bash
 npm run build
@@ -136,28 +165,46 @@ npm run dev
 
 These commands are declared in package.json; the list is not a test execution report. Test commands may need a browser, service or prepared database.
 
-## Deployment
+<a id="deployment"></a>
+
+## 🌍 Deployment
 
 Configure production secrets, HTTPS, an independent database and allowed hosts. PHP hosting must use public/ as document root; Django needs static-file and WSGI/ASGI configuration. Development servers are for local use.
 
-## Limitations
+<a id="limitations"></a>
+
+## 📌 Limitations
 
 The seed creates demonstration users with known passwords. Replace them before hosting. Payment and mail settings need environment-specific integrations; the repository is not a guarantee of production certification.
 
-## Troubleshooting
+<a id="troubleshooting"></a>
+
+## 🛠️ Troubleshooting
 
 - Missing packages: install dependencies using the project’s package manager.
 - API/network failure: check the configured origin, provider and hosting bindings.
 - Old assets: rebuild when a build script exists, then clear the browser cache.
 
-## Contributing
+<a id="contributing"></a>
+
+## 🤝 Contributing
 
 Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
 
-## License
+<a id="license"></a>
+
+## 📄 License
 
 No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
 
 ---
 
 Part of **PIMX** · Documentation in English and Persian.
+
+---
+
+<div align="center">
+
+🛍️ **COMMERCE · LARAVEL** · [English](README.md) · [فارسی](README.fa.md)
+
+</div>
