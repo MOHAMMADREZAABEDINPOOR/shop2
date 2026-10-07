@@ -1,210 +1,181 @@
 <div align="center">
 
-<img src="public/readme-assets/hero.gif" width="1200" alt="COMMERCE · LARAVEL: a boutique storefront with product display and a shopping bag" />
+<img src="public/readme-assets/hero.gif" width="1200" height="480" alt="SHOP 02 · LARAVEL — unique animated 3D storefront scene" />
 
-**[English](README.md) · [فارسی](README.fa.md)**
+**[🌐 English](README.md) · [🇮🇷 فارسی](README.fa.md)**
 
 </div>
 
-# 🛍️ COMMERCE · LARAVEL
+# 🛍️ SHOP 02 · LARAVEL
 
-A Laravel 13 ecommerce application with an Alpine.js/Tailwind frontend, product variants, customer accounts, carts, orders and role-based administrative workflows.
+**STOREFRONT + CUSTOMER ACCOUNT + BACK OFFICE**
 
-[GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/shop2) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](public/readme-assets/hero.png)
+A complete storefront and back office in one Laravel application. Customers move from product discovery to variants, wishlists, carts and checkout; the administration area brings catalog maintenance, stock, coupons, orders, reviews and settings into one workflow.
 
-| At a glance | Details |
+| At a glance | What is inside |
 |:---|:---|
-| 🛍️ Experience | Web application / browser experience |
-| 🧰 Built with | `Vite` · `Tailwind CSS` · `php` · `laravel/framework` |
+| 🎯 Focus | Storefront, customer journey and administration |
+| 🧰 Stack | PHP 8.3+ · Laravel 13 · Blade · Alpine.js · Tailwind CSS 4 · Vite 8 |
 | 🌐 Documentation | [English](README.md) · [فارسی](README.fa.md) |
+| 🎨 Artwork | [Animated](public/readme-assets/hero.gif) · [Static](public/readme-assets/hero.png) |
 
-[✨ Features](#features) · [🚀 Getting started](#getting-started) · [⚙️ Configuration](#configuration) · [🌍 Deployment](#deployment)
+[✨ Experience](#experience) · [🚀 Run locally](#setup) · [🧱 Architecture](#architecture) · [🌍 Deployment](#deployment)
 
----
+<a id="experience"></a>
 
-<a id="features"></a>
+## ✨ From the first search to the next order
 
-## ✨ Features
-
-| Area | Included capability |
+| Capability | Experience |
 |:---|:---|
-| 🛍️ Commerce | Catalog, product variants, wishlists and reviews |
-| 🛍️ Commerce | Cart, coupons, addresses and checkout |
-| 👤 Accounts | Admin/staff roles with granular permissions |
-| 🌐 Experience | Persian/English translations and responsive templates |
+| 🔎 Catalog | Category/brand browsing, product detail and search suggestions. |
+| 🎛️ Product variants | Attributes, attribute values, product images and variant stock records. |
+| 🛒 Guest + customer cart | Cart changes, coupons, guest sign-in continuity and wishlist-to-cart actions. |
+| 🏠 Customer account | Profile, password reset, addresses, orders and reviews. |
+| 🧮 Server-side totals | Pricing and checkout services calculate totals and retain order/address snapshots. |
+| 💳 Payment workflow | A test gateway, signed simulator links and duplicate-callback checks. |
+| 📦 Inventory | Stock-aware checkout and inventory movements linked to paid orders. |
+| 🧑‍💼 Back office | Role-gated routes for products, categories, brands, coupons, banners, orders and reviews. |
+| 🧾 Audit + presentation | Audit records, site settings, English/Persian locale switching, sitemap and policy pages. |
 
-<a id="stack"></a>
+### 🧭 Take a tour
 
-## 🧰 Stack
+1. Browse `/shop`, open a product and choose its variant.
+2. Add it to `/cart`, edit quantities and apply an available coupon.
+3. Sign in, save an address and continue to `/checkout`.
+4. Complete the test gateway and inspect `/account/orders` and the admin order list.
 
-| Tool | Version / source |
-|---|---|
-| Vite | `^8.0.0` |
-| Tailwind CSS | `^4.0.0` |
-| php | `^8.3` |
-| laravel/framework | `^13.17` |
+| Route | Purpose |
+|:---|:---|
+| `/` | Home and promoted products |
+| `/shop` | Catalog |
+| `/cart · /checkout` | Cart and checkout |
+| `/account` | Customer account |
+| `/admin` | Role-gated administration |
+| `/lang/en · /lang/fa` | Interface locale switch |
 
-<a id="getting-started"></a>
+<a id="setup"></a>
 
-## 🚀 Getting started
+## 🚀 Run it locally
 
-PHP 8.3+, Composer, Node.js 22.12+, npm and the database configured in .env.
+PHP 8.3+, Composer, Node.js 22.12+ and a database. The example configuration uses MySQL; SQLite is available for a simple local setup.
 
 ```bash
 git clone https://github.com/MOHAMMADREZAABEDINPOOR/shop2.git
 cd shop2
 
 composer install
-# Copy .env.example to .env; configure DB_CONNECTION and credentials
+# Copy .env.example to .env.
 php artisan key:generate
+# Configure a database before continuing.
 php artisan migrate --seed
-# Seed only a fresh development database
+php artisan storage:link
 npm ci
 npm run build
 php artisan serve
 ```
 
-<a id="configuration"></a>
+For SQLite, set `DB_CONNECTION=sqlite` and remove the example `DB_DATABASE=shop2` line so Laravel uses `database/database.sqlite`. Create that file with `php -r "file_exists('database/database.sqlite') || touch('database/database.sqlite');"`. For MySQL, create the database first and set host, database and credentials in `.env`. The seed step is for a fresh local database.
 
-## ⚙️ Configuration
+Open **http://127.0.0.1:8000**. The built-in server is for local development.
 
-These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
+### 🧪 Demo accounts
 
-| Name | Role |
-|---|---|
-| `ANALYTICS_ID` | Application setting; inspect its definition |
-| `ANALYTICS_PROVIDER` | Application setting; inspect its definition |
-| `APP_DEBUG` | Application setting; inspect its definition |
-| `APP_ENV` | Application setting; inspect its definition |
-| `APP_FAKER_LOCALE` | Application setting; inspect its definition |
-| `APP_FALLBACK_LOCALE` | Application setting; inspect its definition |
-| `APP_KEY` | Credential/connection setting; keep private |
-| `APP_LOCALE` | Application setting; inspect its definition |
-| `APP_MAINTENANCE_DRIVER` | Application setting; inspect its definition |
-| `APP_NAME` | Application setting; inspect its definition |
-| `APP_URL` | Application setting; inspect its definition |
-| `AUTH_PASSWORD_TIMEOUT` | Credential/connection setting; keep private |
-| `AUTH_REMEMBER_DURATION` | Application setting; inspect its definition |
-| `AWS_ACCESS_KEY_ID` | Credential/connection setting; keep private |
-| `AWS_BUCKET` | Application setting; inspect its definition |
-| `AWS_DEFAULT_REGION` | Application setting; inspect its definition |
-| `AWS_SECRET_ACCESS_KEY` | Credential/connection setting; keep private |
-| `AWS_USE_PATH_STYLE_ENDPOINT` | Application setting; inspect its definition |
-| `BCRYPT_ROUNDS` | Application setting; inspect its definition |
-| `BROADCAST_CONNECTION` | Credential/connection setting; keep private |
-| `CACHE_STORE` | Application setting; inspect its definition |
-| `DB_CONNECTION` | Credential/connection setting; keep private |
-| `DB_DATABASE` | Application setting; inspect its definition |
-| `DB_HOST` | Application setting; inspect its definition |
-| `DB_PASSWORD` | Credential/connection setting; keep private |
-| `DB_PORT` | Application setting; inspect its definition |
-| `DB_USERNAME` | Application setting; inspect its definition |
-| `FILESYSTEM_DISK` | Application setting; inspect its definition |
-| `HSTS_MAX_AGE` | Application setting; inspect its definition |
-| `LOG_CHANNEL` | Application setting; inspect its definition |
-| `LOG_DEPRECATIONS_CHANNEL` | Application setting; inspect its definition |
-| `LOG_LEVEL` | Application setting; inspect its definition |
-| `LOG_STACK` | Application setting; inspect its definition |
-| `MAIL_FROM_ADDRESS` | Application setting; inspect its definition |
-| `MAIL_FROM_NAME` | Application setting; inspect its definition |
-| `MAIL_HOST` | Application setting; inspect its definition |
-| `MAIL_MAILER` | Application setting; inspect its definition |
-| `MAIL_PASSWORD` | Credential/connection setting; keep private |
-| `MAIL_PORT` | Application setting; inspect its definition |
-| `MAIL_SCHEME` | Application setting; inspect its definition |
-| `MAIL_USERNAME` | Application setting; inspect its definition |
-| `MEMCACHED_HOST` | Application setting; inspect its definition |
-| `QUEUE_CONNECTION` | Credential/connection setting; keep private |
-| `REDIS_CLIENT` | Application setting; inspect its definition |
-| `REDIS_HOST` | Application setting; inspect its definition |
-| `REDIS_PASSWORD` | Credential/connection setting; keep private |
-| `REDIS_PORT` | Application setting; inspect its definition |
-| `SESSION_DOMAIN` | Application setting; inspect its definition |
-| `SESSION_DRIVER` | Application setting; inspect its definition |
-| `SESSION_ENCRYPT` | Application setting; inspect its definition |
-| `SESSION_EXPIRE_ON_CLOSE` | Application setting; inspect its definition |
-| `SESSION_LIFETIME` | Application setting; inspect its definition |
-| `SESSION_PATH` | Application setting; inspect its definition |
-| `VITE_APP_NAME` | Public browser configuration; never put secrets here |
+Created by the local seed workflow. Use them only in a fresh demonstration database; replace seeded accounts/passwords before public hosting.
 
-<a id="usage"></a>
+| Role | Email | Demo password |
+|:---|:---|:---|
+| Super admin | `admin@digistore.ir` | `password123` |
+| Staff | `staff@digistore.ir` | `password123` |
+| Customer | `customer@digistore.ir` | `password123` |
 
-## 🎯 Usage
+## ⚙️ Configuration that matters
 
-Use PHP 8.3+, Composer and Node compatible with Vite 8. Configure .env and a database, generate APP_KEY, migrate and seed a development database, build assets and start Artisan. Inspect routes/web.php for customer/admin paths.
+Start from [`.env.example`](.env.example); keep real values in your local `.env` or hosting environment.
 
-<a id="project-structure"></a>
-
-## 🗂️ Project structure
-
-| Path | Role |
-|---|---|
-| [`app/`](app/) | Application routes / PHP application |
-| [`database/`](database/) | Database schema/sample resources |
-| [`public/`](public/) | Public web assets |
-| [`resources/`](resources/) | Laravel views and frontend source |
-| [`routes/`](routes/) | Laravel route definitions |
-| [`tests/`](tests/) | Existing automated checks |
-| [`boost.json`](boost.json) | Project entry/configuration file |
-| [`composer.json`](composer.json) | Project entry/configuration file |
-| [`package.json`](package.json) | Project entry/configuration file |
-
-<a id="commands-and-checks"></a>
-
-## 🧪 Commands and checks
-
-| Command | Purpose |
+| Setting | Role |
 |:---|:---|
-| `npm run build` | 📦 Production build |
-| `npm run dev` | 🧑‍💻 Development server |
+| `APP_KEY` | Generated with `php artisan key:generate`. |
+| `APP_ENV / APP_DEBUG / APP_URL` | Environment, debug mode and the public base URL. |
+| `DB_CONNECTION / DB_DATABASE` | Select mysql or sqlite and its database. |
+| `SESSION_DRIVER / SESSION_LIFETIME` | Session storage and inactivity lifetime. |
+| `SESSION_ENCRYPT` | Encryption for stored session payloads. |
+| `MAIL_MAILER / MAIL_*` | Log locally or configure an email provider. |
+| `QUEUE_CONNECTION / CACHE_STORE` | Queue/cache drivers; database is used in the example. |
 
-```bash
-npm run build
-npm run dev
+<a id="architecture"></a>
+
+## 🧱 How the application fits together
+
+```mermaid
+flowchart LR
+    Browser --> Blade[Blade + Alpine + Tailwind]
+    Blade --> Controllers[Laravel controllers]
+    Controllers --> Services[Cart / pricing / checkout services]
+    Services --> DB[(Relational database)]
+    Services --> Gateway[Test payment gateway]
+    Controllers --> Admin[Role-gated back office]
 ```
 
-These commands are declared in package.json; the list is not a test execution report. Test commands may need a browser, service or prepared database.
+| Path | Responsibility |
+|:---|:---|
+| [`app/Http/Controllers/Shop/`](app/Http/Controllers/Shop/) | Storefront and checkout endpoints |
+| [`app/Http/Controllers/Admin/`](app/Http/Controllers/Admin/) | Back-office workflows |
+| [`app/Services/`](app/Services/) | Cart, pricing, checkout, inventory, payments and audit logic |
+| [`app/Models/`](app/Models/) | Eloquent domain models |
+| [`database/`](database/) | Migrations, factories and demo seed data |
+| [`resources/`](resources/) · [`routes/`](routes/) | Blade, frontend assets and application routes |
+| [`tests/`](tests/) | Authentication, cart, payment, access and locale checks |
+
+## 💳 Payment behavior
+
+The implemented gateway is `test_gateway`: an interactive simulator, not a live bank integration. The gateway contract is an extension point for a real provider. A production integration must implement and validate that provider’s server-side verification and callback behavior.
 
 <a id="deployment"></a>
 
-## 🌍 Deployment
+## 🌍 From local development to hosting
 
-Configure production secrets, HTTPS, an independent database and allowed hosts. PHP hosting must use public/ as document root; Django needs static-file and WSGI/ASGI configuration. Development servers are for local use.
+Point the web server document root to `public/`, build frontend assets, set `APP_ENV=production`, `APP_DEBUG=false` and the HTTPS base URL, and keep `storage/` and `bootstrap/cache/` writable. Run migrations with a backup plan and configure email, cache and queues for the chosen host. Demo accounts must be replaced before public use.
 
-<a id="limitations"></a>
+## 🧪 Checks for developers
 
-## 📌 Limitations
+| Command | Purpose |
+|:---|:---|
+| `php artisan test --compact` | Application feature tests |
+| `npm run build` | Build Vite/Tailwind assets |
+| `php artisan route:list` | Inspect the application routes |
 
-The seed creates demonstration users with known passwords. Replace them before hosting. Payment and mail settings need environment-specific integrations; the repository is not a guarantee of production certification.
+These are available validation commands, not a claim that the full application was tested during this documentation update.
 
-<a id="troubleshooting"></a>
+## 🧩 Troubleshooting
 
-## 🛠️ Troubleshooting
+| Symptom | Try this |
+|:---|:---|
+| Vite manifest missing | Run `npm ci` and `npm run build`. |
+| SQLite connection points to shop2 | Remove the sample DB_DATABASE value or replace it with a valid absolute SQLite path. |
+| 403 on /admin | Sign in using a user with an allowed admin/staff role. |
 
-- Missing packages: install dependencies using the project’s package manager.
-- API/network failure: check the configured origin, provider and hosting bindings.
-- Old assets: rebuild when a build script exists, then clear the browser cache.
+## 🧭 Three approaches to commerce
 
-<a id="contributing"></a>
+| Project | Approach |
+|:---|:---|
+| [SHOP 01](https://github.com/MOHAMMADREZAABEDINPOOR/shop) | Django domain apps, stock-aware ordering and an operations dashboard |
+| [SHOP 02](https://github.com/MOHAMMADREZAABEDINPOOR/shop2) | Laravel services, product variants and a role-gated back office |
+| [NEXTSHOP](https://github.com/MOHAMMADREZAABEDINPOOR/shop3) | Direct PHP, a small MVC/router layer and SQLite bootstrap |
 
-## 🤝 Contributing
+## 🤝 Feedback & contribution
 
-Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
+Open an issue with the page, expected behavior and steps to reproduce. For code changes, use a focused branch and the relevant checks.
 
-<a id="license"></a>
+[Issues](https://github.com/MOHAMMADREZAABEDINPOOR/shop2/issues) · [PIMX](https://github.com/MOHAMMADREZAABEDINPOOR)
 
 ## 📄 License
 
-No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
-
----
-
-Part of **PIMX** · Documentation in English and Persian.
+This snapshot has no repository-level license file. Contact the owner for reuse terms.
 
 ---
 
 <div align="center">
 
-🛍️ **COMMERCE · LARAVEL** · [English](README.md) · [فارسی](README.fa.md)
+🛍️ **SHOP 02 · LARAVEL** · [English](README.md) · [فارسی](README.fa.md)
 
 </div>
