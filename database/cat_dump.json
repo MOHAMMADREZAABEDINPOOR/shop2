@@ -1,0 +1,358 @@
+{
+  "digital-goods": {
+    "name_fa": "کالای دیجیتال و گجت‌ها",
+    "desc_fa": "انواع گوشی‌های هوشمند، تبلت، ساعت هوشمند، هدفون و لوازم جانبی دیجیتال"
+  },
+  "accessories": {
+    "name_fa": "لوازم جانبی دیجیتال",
+    "desc_fa": "شارژر، کابل، پاوربانک و حافظه جانبی اورجینال با ضمانت اصالت"
+  },
+  "audio-video": {
+    "name_fa": "صوتی و تصویری",
+    "desc_fa": "تلویزیون، اسپیکر و سیستم صوتی حرفه‌ای برای تجربه سینمایی در خانه"
+  },
+  "mobile-phones": {
+    "name_fa": "گوشی موبایل",
+    "desc_fa": "جدیدترین گوشی‌های پرچمدار و میان‌رده با رجیستری رسمی و ۱۸ ماه گارانتی"
+  },
+  "laptops": {
+    "name_fa": "لپ‌تاپ و اولترابوک",
+    "desc_fa": "لپ‌تاپ اداری، مهندسی و گیمینگ از ایسوس، اپل، لنوو، اچ‌پی و دل"
+  },
+  "smart-watches": {
+    "name_fa": "ساعت و مچ‌بند هوشمند",
+    "desc_fa": "ساعت و مچ‌بند هوشمند با پایش سلامتی، GPS و مکالمه مستقیم"
+  },
+  "headphones": {
+    "name_fa": "هدفون، هدست و هندزفری",
+    "desc_fa": "هدفون و هندزفری نویزکنسلینگ سونی، اپل، جی‌بی‌ال و بوز"
+  },
+  "powerbanks": {
+    "name_fa": "پاوربانک و باتری همراه",
+    "desc_fa": "پاوربانک و شارژر همراه با شارژ سریع مناسب سفر و استفاده روزمره"
+  },
+  "tv": {
+    "name_fa": "تلویزیون هوشمند",
+    "desc_fa": "تلویزیون هوشمند 4K با پنل QLED و OLED و رفرش‌ریت مناسب بازی"
+  },
+  "gaming": {
+    "name_fa": "بازی، کنسول و گیمینگ",
+    "desc_fa": "کنسول‌های بازی پلی‌استیشن و ایکس‌باکس، بازی‌ها و تجهیزات گیمینگ حرفه‌ای"
+  },
+  "computer-parts": {
+    "name_fa": "کامپیوتر، لپ‌تاپ و ماشین‌های اداری",
+    "desc_fa": "لپ‌تاپ، سیستم‌های رومیزی، قطعات سخت‌افزار، مانیتور و تجهیزات شبکه"
+  },
+  "smart-home": {
+    "name_fa": "خانه هوشمند، روشنایی و دکوراسیون",
+    "desc_fa": "گجت‌های هوشمند خانگی، روشنایی مدرن، امنیت و دکوراسیون منزل"
+  },
+  "tablets": {
+    "name_fa": "تبلت و کتابخوان دیجیتال",
+    "desc_fa": "تبلت و کتابخوان برای کار، تحصیل و سرگرمی با نمایشگر چشم‌نواز"
+  },
+  "speakers-soundbars": {
+    "name_fa": "اسپیکر و ساندبار",
+    "desc_fa": "اسپیکر بلوتوثی و ساندبار با صدای فراگیر و بیس کوبنده"
+  },
+  "chargers-cables": {
+    "name_fa": "شارژر دیواری، کابل و مبدل",
+    "desc_fa": "کابل و شارژر دیواری فست‌شارژ با انواع درگاه Type-C و لایتنینگ"
+  },
+  "storage-flash": {
+    "name_fa": "حافظه SSD، هارد اکسترنال و فلش",
+    "desc_fa": "هارد اکسترنال، SSD و فلش مموری با سرعت بالا و گارانتی طولانی"
+  },
+  "consoles": {
+    "name_fa": "کنسول‌های بازی (PlayStation, Xbox, Switch)",
+    "desc_fa": "پلی‌استیشن، ایکس‌باکس و لوازم جانبی گیمینگ با ضمانت سلامت"
+  },
+  "monitors": {
+    "name_fa": "مانیتور و نمایشگر حرفه‌ای",
+    "desc_fa": "مانیتور اداری، طراحی و گیمینگ با دقت رنگ بالا و نرخ نوسازی سریع"
+  },
+  "keyboards-mice": {
+    "name_fa": "ماوس، کیبورد مکانیکی و پد",
+    "desc_fa": "ماوس و کیبورد مکانیکال و ارگونومیک مخصوص بازی و کار طولانی"
+  },
+  "pc-components": {
+    "name_fa": "قطعات اصلی سخت‌افزار (CPU, GPU, RAM)",
+    "desc_fa": "کارت گرافیک و قطعات اسمبل سیستم گیمینگ و رندرینگ حرفه‌ای"
+  },
+  "gadgets-cameras": {
+    "name_fa": "دوربین عکاسی و هلی‌شات",
+    "desc_fa": "دوربین عکاسی و گجت هوشمند برای ثبت لحظه‌ها با کیفیت حرفه‌ای"
+  },
+  "home-appliances": {
+    "name_fa": "لوازم خانگی و آشپزخانه",
+    "desc_fa": "لوازم برقی خانگی، پخت و پز، قهوه‌ساز، جاروبرقی، یخچال و شستشو"
+  },
+  "fashion-clothing": {
+    "name_fa": "مد، پوشاک و استایل",
+    "desc_fa": "پوشاک مردانه، زنانه و بچگانه، کیف، کفش، ساعت مچی و اکسسوری مد"
+  },
+  "beauty-health": {
+    "name_fa": "زیبایی، سلامت و مراقبت شخصی",
+    "desc_fa": "محصولات آرایشی، مراقبت پوست و مو، عطر و ادکلن، تجهیزات اصلاح و سلامت"
+  },
+  "sports-outdoors": {
+    "name_fa": "ورزش، تناسب اندام و کمپینگ",
+    "desc_fa": "لوازم ورزشی و بدنسازی، دوچرخه، اسکوتر برقی، تجهیزات سفر و کوهنوردی"
+  },
+  "tools-automotive": {
+    "name_fa": "ابزارآلات، تجهیزات صنعتی و خودرو",
+    "desc_fa": "ابزار برقی و دستی، تجهیزات فنی و لوازم جانبی مصرفی خودرو"
+  },
+  "toys-baby": {
+    "name_fa": "کودک، اسباب‌بازی و نوزاد",
+    "desc_fa": "انواع اسباب‌بازی هوشمند، لگو، پازل، وسایل خواب، بهداشت و گردش کودک"
+  },
+  "books-stationery": {
+    "name_fa": "کتاب، نوشت‌افزار و هنر",
+    "desc_fa": "کتاب‌های ادبیات، علمی و توسعه فردی، نوشت‌افزار لوکس و ادوات هنری"
+  },
+  "supermarket-grocery": {
+    "name_fa": "سوپرمارکت، قهوه و خوراکی‌های ممتاز",
+    "desc_fa": "قهوه‌های تخصصی، چای اعلا، شکلات‌های خارجی و خشکبار دست‌چین"
+  },
+  "mobile-accessories": {
+    "name_fa": "لوازم جانبی موبایل و تبلت",
+    "desc_fa": null
+  },
+  "desktop-pcs": {
+    "name_fa": "کامپیوترهای رومیزی و All-in-One",
+    "desc_fa": null
+  },
+  "network-modems": {
+    "name_fa": "تجهیزات شبکه، مودم و روتر Wi-Fi",
+    "desc_fa": null
+  },
+  "printers-scanners": {
+    "name_fa": "پرینتر، اسکنر و لوازم اداری",
+    "desc_fa": null
+  },
+  "video-games": {
+    "name_fa": "بازی‌های کنسول و کامپیوتر",
+    "desc_fa": null
+  },
+  "gamepads-wheels": {
+    "name_fa": "دسته بازی، فرمان و جوی‌استیک",
+    "desc_fa": null
+  },
+  "gaming-headsets": {
+    "name_fa": "هدست و میکروفون گیمینگ و استریم",
+    "desc_fa": null
+  },
+  "gaming-furniture": {
+    "name_fa": "صندلی و میز گیمینگ ارگونومیک",
+    "desc_fa": null
+  },
+  "vr-headsets": {
+    "name_fa": "عینک و هدست واقعیت مجازی (VR)",
+    "desc_fa": null
+  },
+  "coffee-espresso-makers": {
+    "name_fa": "اسپرسوساز، قهوه‌ساز و چای‌ساز",
+    "desc_fa": null
+  },
+  "air-fryers-ovens": {
+    "name_fa": "سرخ‌کن بدون روغن، فر و مایکروویو",
+    "desc_fa": null
+  },
+  "food-processors": {
+    "name_fa": "غذاساز، آسیاب و مخلوط‌کن",
+    "desc_fa": null
+  },
+  "vacuums-cleaners": {
+    "name_fa": "جاروبرقی، جاروشارژی و ربات نظافت",
+    "desc_fa": null
+  },
+  "refrigerators": {
+    "name_fa": "یخچال، فریزر و ساید بای ساید",
+    "desc_fa": null
+  },
+  "washing-dishwashers": {
+    "name_fa": "ماشین لباسشویی و ظرفشویی",
+    "desc_fa": null
+  },
+  "cooling-air-purifiers": {
+    "name_fa": "کولر گازی و دستگاه تصفیه هوا",
+    "desc_fa": null
+  },
+  "irons-steamers": {
+    "name_fa": "اتو بخار دستی و اتو مخزن‌دار",
+    "desc_fa": null
+  },
+  "mens-clothing": {
+    "name_fa": "پوشاک مردانه (پیراهن، شلوار، کاپشن)",
+    "desc_fa": null
+  },
+  "womens-clothing": {
+    "name_fa": "پوشاک زنانه (مانتو، پالتو، شومیز)",
+    "desc_fa": null
+  },
+  "shoes-sneakers": {
+    "name_fa": "کتانی اورجینال، کفش رسمی و صندل",
+    "desc_fa": null
+  },
+  "bags-luggage": {
+    "name_fa": "کوله پشتی، کیف دستی و چمدان",
+    "desc_fa": null
+  },
+  "watches-jewelry": {
+    "name_fa": "ساعت مچی عقربه‌ای و اکسسوری لوکس",
+    "desc_fa": null
+  },
+  "sunglasses": {
+    "name_fa": "عینک آفتابی استاندارد UV400",
+    "desc_fa": null
+  },
+  "skincare-creams": {
+    "name_fa": "مراقبت از پوست، سرم و ضدآفتاب",
+    "desc_fa": null
+  },
+  "perfumes-colognes": {
+    "name_fa": "عطر، ادکلن اورجینال و بادی‌اسپلش",
+    "desc_fa": null
+  },
+  "shavers-grooming": {
+    "name_fa": "ماشین اصلاح سر و صورت، ریش‌تراش",
+    "desc_fa": null
+  },
+  "hair-dryers": {
+    "name_fa": "سشوار حرفه‌ای، اتو و حالت‌دهنده مو",
+    "desc_fa": null
+  },
+  "oral-dental": {
+    "name_fa": "مسواک برقی و بهداشت دهان و دندان",
+    "desc_fa": null
+  },
+  "health-monitors": {
+    "name_fa": "فشارسنج، تب‌سنج و ماساژور خانگی",
+    "desc_fa": null
+  },
+  "smart-lighting": {
+    "name_fa": "روشنایی هوشمند، لامپ و ریسه RGB",
+    "desc_fa": null
+  },
+  "security-cameras": {
+    "name_fa": "دوربین مداربسته و امنیت هوشمند",
+    "desc_fa": null
+  },
+  "smart-plugs": {
+    "name_fa": "پریز و کلید لمسی هوشمند",
+    "desc_fa": null
+  },
+  "dinnerware": {
+    "name_fa": "ظروف پذیرایی و سرو غذا",
+    "desc_fa": null
+  },
+  "bedding-linens": {
+    "name_fa": "سرویس خواب، بالش و روتختی",
+    "desc_fa": null
+  },
+  "wall-art": {
+    "name_fa": "ساعت دیواری مدرن و تابلوهای دکوراتیو",
+    "desc_fa": null
+  },
+  "fitness-equipment": {
+    "name_fa": "لوازم بدنسازی، دمبل و کش فیتنس",
+    "desc_fa": null
+  },
+  "bicycles-scooters": {
+    "name_fa": "دوچرخه، اسکوتر برقی و کلاه ایمنی",
+    "desc_fa": null
+  },
+  "camping-gear": {
+    "name_fa": "چادر مسافرتی، کیسه خواب و فلاسک",
+    "desc_fa": null
+  },
+  "sportswear": {
+    "name_fa": "پوشاک ورزشی تخصصی و لگینگ",
+    "desc_fa": null
+  },
+  "water-sports": {
+    "name_fa": "عینک و وسایل شنا و غواصی",
+    "desc_fa": null
+  },
+  "power-tools": {
+    "name_fa": "ابزار برقی، دریل و فرز شارژی",
+    "desc_fa": null
+  },
+  "hand-tools": {
+    "name_fa": "ابزار دستی، آچار و جعبه ابزار کامل",
+    "desc_fa": null
+  },
+  "car-accessories": {
+    "name_fa": "لوازم جانبی و تجهیزات داخل خودرو",
+    "desc_fa": null
+  },
+  "car-electronics": {
+    "name_fa": "سیستم صوتی، مانیتور و ردیاب خودرو",
+    "desc_fa": null
+  },
+  "car-care": {
+    "name_fa": "واکس، پولیش و محصولات نانو خودرو",
+    "desc_fa": null
+  },
+  "board-games-puzzles": {
+    "name_fa": "بازی فکری، پازل و بردگیم",
+    "desc_fa": null
+  },
+  "rc-drones-cars": {
+    "name_fa": "ماشین کنترلی، پهپاد و ربات هوشمند",
+    "desc_fa": null
+  },
+  "lego-building": {
+    "name_fa": "بلوک ساختنی و ست‌های اصل لگو",
+    "desc_fa": null
+  },
+  "dolls-figures": {
+    "name_fa": "اکشن‌فیگور شخصیت‌ها و عروسک",
+    "desc_fa": null
+  },
+  "baby-strollers": {
+    "name_fa": "کالسکه، صندلی ماشین و وسایل نوزاد",
+    "desc_fa": null
+  },
+  "novels-literature": {
+    "name_fa": "رمان، ادبیات جهان و داستان",
+    "desc_fa": null
+  },
+  "business-psychology": {
+    "name_fa": "کتاب‌های موفقیت، مدیریت و روانشناسی",
+    "desc_fa": null
+  },
+  "fine-pens-stationery": {
+    "name_fa": "روان‌نویس لوکس، خودنویس و سررسید",
+    "desc_fa": null
+  },
+  "art-supplies": {
+    "name_fa": "ابزار نقاشی، رنگ روغن و ماژیک حرفه‌ای",
+    "desc_fa": null
+  },
+  "musical-instruments": {
+    "name_fa": "گیتار، کالیمبا و سازهای موسیقی",
+    "desc_fa": null
+  },
+  "specialty-coffee": {
+    "name_fa": "دانه قهوه تخصصی و کپسول نسپرسو",
+    "desc_fa": null
+  },
+  "artisan-tea": {
+    "name_fa": "چای سرگل لاهیجان و دمنوش طبیعی",
+    "desc_fa": null
+  },
+  "luxury-chocolates": {
+    "name_fa": "شکلات تخته‌ای و پذیرایی خارجی",
+    "desc_fa": null
+  },
+  "premium-nuts": {
+    "name_fa": "پسته، فندق و خشکبار ارگانیک",
+    "desc_fa": null
+  },
+  "olive-oils": {
+    "name_fa": "روغن زیتون فرابکر و چاشنی خاص",
+    "desc_fa": null
+  }
+}

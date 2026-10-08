@@ -18,11 +18,17 @@ class Product extends Model
         'category_id',
         'brand_id',
         'name',
+        'name_en',
+        'name_fa',
         'slug',
         'sku',
         'barcode',
         'description',
+        'description_en',
+        'description_fa',
         'short_description',
+        'short_description_en',
+        'short_description_fa',
         'price',
         'sale_price',
         'cost_price',
@@ -36,6 +42,45 @@ class Product extends Model
         'seo_title',
         'seo_description',
     ];
+
+    public function getNameAttribute(?string $value): string
+    {
+        $locale = app()->getLocale();
+        if ($locale === 'en' && ! empty($this->attributes['name_en'])) {
+            return $this->attributes['name_en'];
+        }
+        if ($locale === 'fa' && ! empty($this->attributes['name_fa'])) {
+            return $this->attributes['name_fa'];
+        }
+
+        return $value ?? '';
+    }
+
+    public function getShortDescriptionAttribute(?string $value): ?string
+    {
+        $locale = app()->getLocale();
+        if ($locale === 'en' && ! empty($this->attributes['short_description_en'])) {
+            return $this->attributes['short_description_en'];
+        }
+        if ($locale === 'fa' && ! empty($this->attributes['short_description_fa'])) {
+            return $this->attributes['short_description_fa'];
+        }
+
+        return $value;
+    }
+
+    public function getDescriptionAttribute(?string $value): ?string
+    {
+        $locale = app()->getLocale();
+        if ($locale === 'en' && ! empty($this->attributes['description_en'])) {
+            return $this->attributes['description_en'];
+        }
+        if ($locale === 'fa' && ! empty($this->attributes['description_fa'])) {
+            return $this->attributes['description_fa'];
+        }
+
+        return $value;
+    }
 
     protected function casts(): array
     {

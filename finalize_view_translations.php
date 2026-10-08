@@ -47,8 +47,8 @@ $pairs = [
     'ثبت شده در:' => 'Registered at:',
 ];
 
-$enPath = __DIR__ . '/lang/en.json';
-$faPath = __DIR__ . '/lang/fa.json';
+$enPath = __DIR__.'/lang/en.json';
+$faPath = __DIR__.'/lang/fa.json';
 
 $en = json_decode(file_get_contents($enPath), true) ?: [];
 $fa = json_decode(file_get_contents($faPath), true) ?: [];
@@ -66,4 +66,4 @@ ksort($fa);
 file_put_contents($enPath, json_encode($en, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 file_put_contents($faPath, json_encode($fa, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-echo "Updated lang files with final pairs (" . count($en) . " keys).\n";
+echo 'Updated lang files with final pairs ('.count($en)." keys).\n";

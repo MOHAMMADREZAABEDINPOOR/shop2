@@ -40,10 +40,10 @@ class Address extends Model
     {
         $parts = [$this->province, $this->city, $this->address_line];
         if ($this->plaque) {
-            $parts[] = __('پلاک') . ' ' . $this->plaque;
+            $parts[] = __('پلاک').' '.$this->plaque;
         }
         if ($this->unit) {
-            $parts[] = __('واحد') . ' ' . $this->unit;
+            $parts[] = __('واحد').' '.$this->unit;
         }
 
         $separator = app()->getLocale() === 'fa' ? '، ' : ', ';

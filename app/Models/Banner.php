@@ -12,15 +12,60 @@ class Banner extends Model
 
     protected $fillable = [
         'title',
+        'title_en',
+        'title_fa',
         'subtitle',
+        'subtitle_en',
+        'subtitle_fa',
         'image_path',
         'mobile_image_path',
         'link_url',
         'badge_text',
+        'badge_text_en',
+        'badge_text_fa',
         'position',
         'sort_order',
         'is_active',
     ];
+
+    public function getTitleAttribute(?string $value): string
+    {
+        $locale = app()->getLocale();
+        if ($locale === 'en' && ! empty($this->attributes['title_en'])) {
+            return $this->attributes['title_en'];
+        }
+        if ($locale === 'fa' && ! empty($this->attributes['title_fa'])) {
+            return $this->attributes['title_fa'];
+        }
+
+        return $value ?? '';
+    }
+
+    public function getSubtitleAttribute(?string $value): ?string
+    {
+        $locale = app()->getLocale();
+        if ($locale === 'en' && ! empty($this->attributes['subtitle_en'])) {
+            return $this->attributes['subtitle_en'];
+        }
+        if ($locale === 'fa' && ! empty($this->attributes['subtitle_fa'])) {
+            return $this->attributes['subtitle_fa'];
+        }
+
+        return $value;
+    }
+
+    public function getBadgeTextAttribute(?string $value): ?string
+    {
+        $locale = app()->getLocale();
+        if ($locale === 'en' && ! empty($this->attributes['badge_text_en'])) {
+            return $this->attributes['badge_text_en'];
+        }
+        if ($locale === 'fa' && ! empty($this->attributes['badge_text_fa'])) {
+            return $this->attributes['badge_text_fa'];
+        }
+
+        return $value;
+    }
 
     protected function casts(): array
     {

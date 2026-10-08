@@ -103,7 +103,7 @@
                 
                 @if($product->has_discount)
                     <div class="absolute top-4 ltr:left-4 rtl:right-4 bg-rose-600 text-white font-black text-xs px-3.5 py-1.5 rounded-xl shadow-lg">
-                        <span><span x-text="discountPercent">{{ $product->discount_percent }}</span>٪ {{ __('Off') }}</span>
+                        <span><span x-text="discountPercent">{{ $product->discount_percent }}</span>{{ app()->getLocale() === 'fa' ? '٪ ' : '% ' }}{{ __('Off') }}</span>
                     </div>
                 @endif
 

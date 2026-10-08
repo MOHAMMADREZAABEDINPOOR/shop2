@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Banner;
+use App\Models\Brand;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -110,5 +111,51 @@ class BilingualLocalizationTest extends TestCase
         $resEn->assertSee('Title &amp; Badge', false);
         $resEn->assertSee('Display Position');
         $resEn->assertSee('Target Link');
+    }
+
+    public function test_brands_render_in_pure_english_when_english_locale(): void
+    {
+        Brand::create([
+            'name' => 'سامسونگ (Samsung)',
+            'name_en' => 'Samsung',
+            'name_fa' => 'سامسونگ',
+            'slug' => 'samsung',
+            'is_active' => true,
+        ]);
+
+        $response = $this->withSession(['locale' => 'en'])->get('/');
+        $response->assertStatus(200);
+        $response->assertSee('Samsung');
+        $response->assertDontSee('سامسونگ');
+        $response->assertSee('S</span>', false);
+    }
+
+    public function test_brands_render_in_persian_when_persian_locale(): void
+    {
+        Brand::create([
+            'name' => 'سامسونگ (Samsung)',
+            'name_en' => 'Samsung',
+            'name_fa' => 'سامسونگ',
+            'slug' => 'samsung',
+            'is_active' => true,
+        ]);
+
+        $response = $this->withSession(['locale' => 'fa'])->get('/');
+        $response->assertStatus(200);
+        $response->assertSee('سامسونگ');
+        $response->assertSee('س</span>', false);
+    }
+
+    public function test_brand_model_extracts_english_name_from_parentheses_fallback(): void
+    {
+        $brand = new Brand([
+            'name' => 'سونی (Sony)',
+        ]);
+
+        app()->setLocale('en');
+        $this->assertEquals('Sony', $brand->name);
+
+        app()->setLocale('fa');
+        $this->assertEquals('سونی', $brand->name);
     }
 }

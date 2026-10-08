@@ -106,7 +106,7 @@
 
                     <!-- Floating glass cards -->
                     <div class="absolute -top-4 ltr:-right-3 ltr:sm:-right-5 rtl:-left-3 rtl:sm:-left-5 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 animate-float-slow border border-gray-100 dark:border-zinc-700">
-                        <span class="w-9 h-9 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black text-sm">٪</span>
+                        <span class="w-9 h-9 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black text-sm">{{ app()->getLocale() === 'fa' ? '٪' : '%' }}</span>
                         <div>
                             <div class="text-xs font-black text-gray-900 dark:text-white">{{ __('Up to 30% Off') }}</div>
                             <div class="text-[10px] text-gray-400">{{ __('On Selected Brands') }}</div>
@@ -480,7 +480,7 @@
                     @foreach($brands as $brand)
                         <a href="{{ route('shop.index', ['brand' => $brand->slug]) }}"
                            class="group p-2.5 min-[360px]:p-4 rounded-2xl border border-gray-100 dark:border-zinc-800 hover:border-rose-300 dark:hover:border-zinc-600 hover:shadow-md transition-all flex flex-col items-center justify-center gap-2 min-h-[96px]">
-                            <span class="w-10 h-10 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-black text-sm flex items-center justify-center group-hover:bg-rose-600 group-hover:text-white transition-colors">{{ mb_substr(trim($brand->name), 0, 1) }}</span>
+                            <span class="w-10 h-10 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-black text-sm flex items-center justify-center group-hover:bg-rose-600 group-hover:text-white transition-colors">{{ mb_strtoupper(mb_substr(trim($brand->name), 0, 1)) }}</span>
                             <span class="font-bold text-xs text-gray-700 dark:text-gray-300 group-hover:text-rose-600 transition-colors leading-snug">{{ $brand->name }}</span>
                         </a>
                     @endforeach
